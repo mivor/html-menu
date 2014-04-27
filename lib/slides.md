@@ -2,9 +2,6 @@
 
 some text here
 
-Note:
-more notes
-
 
 ## Verical slides
 
