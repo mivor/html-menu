@@ -111,7 +111,7 @@ module.exports = function(grunt) {
 				tasks: 'themes'
 			},
             html: {
-                files: [ 'index.html', 'slides.md']
+                files: [ 'index.html', 'master.html', 'lib/slides.md']
             }
 		}
 
