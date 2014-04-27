@@ -2,6 +2,11 @@
 
 some text here
 
+Note:
+some note
+
+another one
+
 
 ## Verical slides
 
