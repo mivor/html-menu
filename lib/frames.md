@@ -10,15 +10,33 @@ Frame-urile sunt folosite pentru a afisa mai multe documente .html intro fereast
 
 Aceata inseamna ca vei avea o pagina fara continut, care va avea rolul de a indica browser-ului ce pagini trebuie sa afiseze. Fiecare document HTML deschis in fereastra browser-ului seme numeste fra, iar fiecare frame se comporta independent fata de celelalte frame-uri.
 
+
 Odata cu introducerea PHP si CSS aceasta tehnica a fost inlaturata putin cate putin, ajungand sa se foloseasca foarte putin.
 
-Dezavantajele utilizarii frame-urilor sunt: dezvoltatorul Web trebuie sa aiba in vedere mai multe documente HTML iar printarea intregii pagini este relativ dificila.
+Dezavantajele utilizarii frame-urilor sunt:
+
+- dezvoltatorul Web trebuie sa aiba in vedere mai multe documente HTML
+
+- printarea intregii pagini este relativ dificila
+<!-- .element class="fragment" -->
+
+- browserul trebuie sa descarca fiecare fisier separat, care mareste timpul de incarcare a paginii
+<!-- .element class="fragment" -->
+
+- rezultate proaste cand este indexat de motoarele de cautare
+<!-- .element class="fragment" -->
+
+- dificultate la trimiterea unui link la altcineva
+<!-- .element class="fragment" -->
 
 
 
 ## Pagina Generica
 
-In general frame-urile se folosesc pentru a afisa un meniu pe de o parte iar continutul pe de o alta parte. Atunci cand cineva da un clik pe un link din meniu se va deschide o alta pagina in partea de continut. Vom exempifica toate acestea cu ajutorul codului urmator:
+In general frame-urile se folosesc pentru a afisa un meniu pe de o parte iar continutul pe de o alta parte. Atunci cand cineva da un clik pe un link din meniu se va deschide o alta pagina in partea de continut.
+
+
+Vom exempifica toate acestea cu ajutorul codului urmator:
 
 ```html
 <!DOCTYPE html>
@@ -31,11 +49,14 @@ In general frame-urile se folosesc pentru a afisa un meniu pe de o parte iar con
 </html>
 ```
 
-- `<frameset>` &ndash; Este tagul care stabileste caracteristicile frame-ului. Frame-urile individuale vor fi definite inauntrul lui.
+- `<frameset>` &ndash; Este tagul care stabileste caracteristicile frame-ului. Frame-urile individuale vor fi definite inauntrul lui
+<!-- .element class="fragment" -->
 
-- `<frameset cols="#%, *">` &ndash; `Cols` stabileste inaltimea pe care fiecare frame o va avea. In exemplul anterior am stabilit ca primul frame (meniul) va ocupa 30% din suprafata afisata, si am folosit semnul " * " pentru a indica browser-ului ca in restul paginii ramase se va afisa continutul paginii.
+- `<frameset cols="#%, *">` &ndash; `Cols` stabileste inaltimea pe care fiecare frame o va avea. In exemplul anterior am stabilit ca primul frame (meniul) va ocupa 30% din suprafata afisata, si am folosit semnul " * " pentru a indica browser-ului ca in restul paginii ramase se va afisa continutul paginii
+<!-- .element class="fragment" -->
 
-- `<frame src="">` &ndash; adresa fisierelor care vor fi afisate ca meniu si respectiv continut.
+- `<frame src="">` &ndash; adresa fisierelor care vor fi afisate ca meniu si respectiv continut
+<!-- .element class="fragment" -->
 
 
 
@@ -63,13 +84,10 @@ In general frame-urile se folosesc pentru a afisa un meniu pe de o parte iar con
 
 Probabil ati observat ca intre frame-uri raman niste linii gri care de multe ori nu sunt dorite. Inlaturarea lor este posibila cu ajutorul `frameborder` si `framespacing`. Aceste atribute vor fi introduse inauntrul tag-ului frameset.
 
-**Nota:** In realitate frameset si frameborder este acelasi atribut. Exista insa browsere care nu recunosc decat unul dintre cele doua. De aceea, sfatul nostru, este sa le folositi pe amandoua pentru mai multa siguranta.
+**Nota:** In realitate frameset si frameborder este acelasi atribut. Exista insa browsere care nu recunosc decat unul dintre cele doua. De aceea, sfatul nostru, este sa le folositi pe amandoua pentru mai multa siguranta
 
-- `frameborder="#"` &ndash; Valoarea 0 nu reproduce margine.
+<!-- .element class="fragment" -->
 
-- `border="#"` &ndash; modifica grosimea marginii. (folosit de netscape)
-
-- `framespacing="#"` &ndash; modifica grosimea marginii (folosit de Internet Explorer)
 
 ###Iata si un exemplu practic:
 
@@ -84,6 +102,15 @@ Probabil ati observat ca intre frame-uri raman niste linii gri care de multe ori
 </frameset>
 </html>
 ```
+
+- `frameborder="#"` &ndash; Valoarea 0 nu reproduce margine.
+<!-- .element class="fragment" -->
+
+- `border="#"` &ndash; modifica grosimea marginii. (folosit de netscape)
+<!-- .element class="fragment" -->
+
+- `framespacing="#"` &ndash; modifica grosimea marginii (folosit de Internet Explorer)
+<!-- .element class="fragment" -->
 
 
 
@@ -127,5 +154,9 @@ Frame-ul se mai poate personaliza inca putin folosind atributele `noresize` si `
 
 - `noresize` &ndash; nu lasa ca framul sa se redimensioneze in functie de monutorul vizitatorului
 
+<!-- .element class="fragment" -->
+
 - `scrolling="(yes/no)"` &ndash; permite sau nu sroll-ul intr-un frame
+
+<!-- .element class="fragment" -->
 
