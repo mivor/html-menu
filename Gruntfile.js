@@ -112,6 +112,9 @@ module.exports = function(grunt) {
 			},
             html: {
                 files: [ 'index.html', 'master.html', 'lib/*.md']
+            },
+            example: {
+            	files: [ 'examples/*.*' ]
             }
 		}
 

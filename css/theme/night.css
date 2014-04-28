@@ -132,9 +132,16 @@ body {
 .reveal .slide-number {
   color: #e7ad52; }
 
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5 {
+  margin-bottom: 0.6em; }
 .reveal p {
   text-align: left;
   margin-bottom: 0.6em; }
-
 .reveal li {
   margin-bottom: 0.5em; }
+.reveal code {
+  color: #d2600b; }
+.reveal em {
+  color: #0085a6; }
+.reveal strong {
+  color: #6b0c6d; }

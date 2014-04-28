@@ -28,18 +28,38 @@ $headingLetterSpacing: 0.03em;
 $headingTextTransform: none;
 $selectionBackgroundColor: #e7ad52;
 $mainFontSize: 30px;
-
+$codeColor: #D2600B;
+$strongColor: #6B0C6D;
+$emColor: #0085A6;
 
 // Theme template ------------------------------
 @import "../template/theme";
 // ---------------------------------------------
 
 
-.reveal p {
-    text-align: left;
-    margin-bottom: 0.6em;
-}
+.reveal {
+    h1, h2, h3, h4, h5 {
+        margin-bottom: 0.6em;
+    }
 
-.reveal li {
-    margin-bottom: 0.5em;
+    p {
+        text-align: left;
+        margin-bottom: 0.6em;
+    }
+
+    li {
+        margin-bottom: 0.5em;
+    }
+
+    code {
+        color:$codeColor;
+    }
+
+    em {
+        color: $emColor;
+    }
+
+    strong {
+        color: $strongColor;
+    }
 }
